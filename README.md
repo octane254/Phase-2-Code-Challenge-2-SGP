@@ -72,7 +72,3 @@ db.json                 # Local data file (if used)
 - This project uses Vite for fast development and build.
 - ESLint is configured for code quality and consistency.
 - The `db.json` file may be used for local data or mock API purposes.
-
-## License
-
-This project is open source and available under the MIT License.
