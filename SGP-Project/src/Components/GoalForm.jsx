@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
 
 const GoalForm = ({ addGoal }) => {
+  // State to hold form input values
   const [name, setName] = useState('');
   const [targetAmount, setTargetAmount] = useState('');
   const [category, setCategory] = useState('');
   const [deadline, setDeadline] = useState('');
 
+  // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission behavior
     const newGoal = {
-      id: Date.now().toString(),
+      id: Date.now().toString(), // Generate a unique ID for the new goal
       name,
-      targetAmount: parseFloat(targetAmount),
-      savedAmount: 0,
+      targetAmount: parseFloat(targetAmount), // Convert target amount to a number
+      savedAmount: 0, // Initialize saved amount to 0
       category,
       deadline,
-      createdAt: new Date().toISOString().split('T')[0],
+      createdAt: new Date().toISOString().split('T')[0], // Set creation date
     };
-    addGoal(newGoal);
+    addGoal(newGoal); // Call the addGoal function passed as a prop
+    // Reset form fields
     setName('');
     setTargetAmount('');
     setCategory('');
@@ -36,4 +39,4 @@ const GoalForm = ({ addGoal }) => {
 };
 
 export default GoalForm;
-// This component allows users to create new financial goals by entering details such as name, target amount, category, and deadline.
+// This component provides a form for users to add new financial goals, including name, target amount, category, and deadline.
