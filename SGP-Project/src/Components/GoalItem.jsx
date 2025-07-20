@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const GoalItem = ({ goal, updateGoal, deleteGoal }) => {
-  // State to hold the current saved amount for the goal
   const [savedAmount, setSavedAmount] = useState(goal.savedAmount);
 
   // Handle deposit action

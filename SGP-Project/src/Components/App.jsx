@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import GoalForm from './components/GoalForm';
-import GoalList from './components/GoalList';
-import Overview from './components/Overview';
+import GoalForm from './GoalForm';
+import GoalList from './GoalList';
+import Overview from './Overview';
 
 const App = () => {
-  // State to hold the list of goals
   const [goals, setGoals] = useState([]);
 
   // Fetch goals from the API when the component mounts
@@ -46,4 +45,3 @@ const App = () => {
 };
 
 export default App;
-// This is the main application component that manages the state of financial goals, allowing users to add, update, and delete goals.

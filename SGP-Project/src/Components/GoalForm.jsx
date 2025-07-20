@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const GoalForm = ({ addGoal }) => {
-  // State to hold form input values
   const [name, setName] = useState('');
   const [targetAmount, setTargetAmount] = useState('');
   const [category, setCategory] = useState('');
@@ -39,4 +38,3 @@ const GoalForm = ({ addGoal }) => {
 };
 
 export default GoalForm;
-// This component provides a form for users to add new financial goals, including name, target amount, category, and deadline.

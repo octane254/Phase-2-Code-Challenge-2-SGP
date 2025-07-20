@@ -12,4 +12,3 @@ const GoalList = ({ goals, updateGoal, deleteGoal }) => {
 };
 
 export default GoalList;
-// This component displays a list of financial goals, rendering each goal using the GoalItem component.

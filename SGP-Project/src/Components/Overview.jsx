@@ -1,12 +1,9 @@
 import React from 'react';
 
 const Overview = ({ goals }) => {
-  // Calculate total number of goals
-  const totalGoals = goals.length;
-  // Calculate total amount saved across all goals
-  const totalSaved = goals.reduce((acc, goal) => acc + goal.savedAmount, 0);
-  // Count completed goals
-  const completedGoals = goals.filter(goal => goal.savedAmount >= goal.targetAmount).length;
+  const totalGoals = goals.length; // Calculate total number of goals
+  const totalSaved = goals.reduce((acc, goal) => acc + goal.savedAmount, 0); // Calculate total amount saved across all goals
+  const completedGoals = goals.filter(goal => goal.savedAmount >= goal.targetAmount).length; // Count completed goals
 
   return (
     <div>
