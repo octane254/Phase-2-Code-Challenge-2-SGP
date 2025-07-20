@@ -4,6 +4,8 @@ import GoalForm from './GoalForm';
 import GoalList from './GoalList';
 import Overview from './Overview';
 
+import './App.css';
+
 const App = () => {
   const [goals, setGoals] = useState([]);
 
@@ -35,8 +37,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Smart Goal Planner</h1>
+    <div className="app-container">
+      <h1 className="app-title">Smart Goal Planner</h1>
       <GoalForm addGoal={addGoal} /> {/* Form to add new goals */}
       <GoalList goals={goals} updateGoal={updateGoal} deleteGoal={deleteGoal} /> {/* List of goals */}
       <Overview goals={goals} /> {/* Overview of savings statistics */}

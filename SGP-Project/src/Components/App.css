@@ -1,0 +1,22 @@
+/* Flashy red and black theme for the main App component */
+
+.app-container {
+  background-color: black;
+  color: red;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Arial Black', Arial, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 20px red;
+}
+
+.app-container h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 10px red, 0 0 20px darkred;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid red;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
