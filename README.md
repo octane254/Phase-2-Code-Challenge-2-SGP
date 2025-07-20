@@ -1,4 +1,4 @@
-# Smart Goal Planner App
+## Smart Goal Planner App
 
 This is a React-based Goal Tracker application built with Vite. The app allows users to add, list, and manage their goals in a simple and intuitive interface.
 
@@ -31,7 +31,7 @@ Start the development server with hot reloading:
 ```bash
 npm run dev
 ```
-Open your browser and navigate to `http://localhost:3000` (or the port shown in the terminal) to view the app.
+Open your browser and navigate to `http://localhost:5173/` (or the port shown in the terminal) to view the app.
 
 ## Building for Production
 
