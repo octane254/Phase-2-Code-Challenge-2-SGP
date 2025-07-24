@@ -55,7 +55,7 @@ The production-ready files will be generated in the `dist` directory.
   ├── assets/           # Static assets like images
 /public                 # Public files served as-is
 index.html              # Main HTML file
-package.json            # Project metadata and scripts
+Package.json            # Project metadata and scripts
 vite.config.js          # Vite configuration
 db.json                 # Local data file (if used)
 ```
