@@ -56,18 +56,11 @@ The production-ready files will be generated in the `dist` directory.
 /public                 # Public files served as-is
 index.html              # Main HTML file
 Package.json            # Project metadata and scripts
-vite.config.js          # Vite configuration
-db.json                 # Local data file (if used)
-```
 
-## Dependencies and Tools
 
-- React
-- Vite
-- ESLint
-- Other dependencies as listed in `package.json`
 
-## Notes
+
+### Notes
 
 - This project uses Vite for fast development and build.
 - ESLint is configured for code quality and consistency.
